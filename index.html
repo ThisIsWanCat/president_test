@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>President Card Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="player-area" id="player3">
+            <div class="player-name">Player 3</div>
+            <div class="player-cards"></div>
+        </div>
+        
+        <div class="middle-row">
+            <div class="player-area" id="player2">
+                <div class="player-name">Player 2</div>
+                <div class="player-cards"></div>
+            </div>
+            
+            <div class="play-area">
+                <div class="last-played"></div>
+                <div class="game-status">Welcome to President!</div>
+                <button id="playButton" disabled>Play Cards</button>
+                <button id="passButton" disabled>Pass</button>
+            </div>
+            
+            <div class="player-area" id="player4">
+                <div class="player-name">Player 4</div>
+                <div class="player-cards"></div>
+            </div>
+        </div>
+        
+        <div class="player-area" id="player1">
+            <div class="player-name">You</div>
+            <div class="player-cards"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2c7744;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    width: 900px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.player-area {
+    text-align: center;
+    padding: 10px;
+}
+
+.middle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-area {
+    width: 300px;
+    height: 200px;
+    background-color: #1a5c2e;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.player-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.card {
+    width: 60px;
+    height: 90px;
+    margin: 2px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card.selected {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card.red {
+    color: red;
+}
+
+.card.black {
+    color: black;
+}
+
+.player-name {
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.game-status {
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.last-played {
+    min-height: 100px;
+    display: flex;
+    gap: 2px;
+} 
